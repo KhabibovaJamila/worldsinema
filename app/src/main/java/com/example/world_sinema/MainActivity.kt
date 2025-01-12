@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Handler().postDelayed({
-            startActivity(Intent(this,AuthorizationActivity::class.java))
+            startActivity(Intent(this,RegistrationActivity::class.java))
             finish()
         }, SplashScreen)
     }

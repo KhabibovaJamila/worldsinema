@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "135283126350",
+    "project_id": "fir-5263d",
+    "storage_bucket": "fir-5263d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135283126350:android:c8815c07049b63e4c0d31f",
+        "android_client_info": {
+          "package_name": "com.example.world_sinema"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFwvx5ACAe0sF4Jm7lBFfi-G9tHOIp1mI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

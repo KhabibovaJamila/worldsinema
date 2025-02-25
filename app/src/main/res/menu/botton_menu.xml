@@ -9,6 +9,16 @@
        <item
            android:id="@+id/selection"
            android:title="Подборка"
-           android:icon="@drawable/ic_baseline_live_tv_24">
+           android:icon="@drawable/ic_baseline_table_rows_24">
+       </item>
+       <item
+           android:id="@+id/collection"
+           android:title="Коллекция"
+           android:icon="@drawable/ic_baseline_star_border_24">
+       </item>
+       <item
+           android:id="@+id/profile"
+           android:title="Профиль"
+           android:icon="@drawable/ic_baseline_person_24">
        </item>
 </menu>

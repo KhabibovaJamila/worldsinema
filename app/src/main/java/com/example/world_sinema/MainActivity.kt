@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Handler().postDelayed({
-            startActivity(Intent(this,AuthorizationActivity::class.java))
+            startActivity(Intent(this,StartActivity::class.java))
             finish()
         }, SplashScreen)
         auth = FirebaseAuth.getInstance()

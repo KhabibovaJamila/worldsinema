@@ -32,7 +32,7 @@ class AuthorizationActivity : AppCompatActivity() {
             if(email.isNotEmpty() && password.isNotEmpty())
                 MainActivity.auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if(it.isSuccessful){
-                        startActivity(Intent(this, MainActivity2::class.java))
+                        startActivity(Intent(this,StartActivity::class.java))
                         finish()
                     }
                 }.addOnFailureListener {

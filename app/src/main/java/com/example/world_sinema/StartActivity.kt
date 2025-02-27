@@ -18,6 +18,7 @@ class StartActivity : AppCompatActivity() {
         binding.bottomNavigation.setOnNavigationItemSelectedListener{
             when(it.itemId){
                 R.id.main -> replaceFragment(HomeFragment())
+
                 R.id.selection -> replaceFragment(SelectionFragment())
                 R.id.collection -> replaceFragment(CollectionFragment())
                 R.id.profile-> replaceFragment(ProfileFragment())

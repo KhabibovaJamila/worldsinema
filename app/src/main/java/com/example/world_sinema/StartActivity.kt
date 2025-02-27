@@ -14,13 +14,27 @@ class StartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
        binding = ActivityStartBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        replaceFragment(HomeFragment())
         binding.bottomNavigation.setOnNavigationItemSelectedListener{
             when(it.itemId){
+                R.id.main -> replaceFragment(HomeFragment())
+                R.id.selection -> replaceFragment(SelectionFragment())
+                R.id.collection -> replaceFragment(CollectionFragment())
+                R.id.profile-> replaceFragment(ProfileFragment())
 
+                else->{
+
+                }
             }
             true
         }
 
+    }
+    private fun replaceFragment(fragment: Fragment){
+        val fragmentManager= supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_container,fragment)
+        fragmentTransaction.commit()
     }
 
 }
